@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { SharedModule } from './shared';
+import { ComponentsModule } from './shared/component/components.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { CarouselComponent } from './carousel/carousel.component';
     CarouselComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharedModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
