@@ -2,16 +2,21 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '../index';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
     declarations: [
-        DashboardComponent
+        DashboardComponent,
+        FooterComponent,
+
     ],
     imports: [
         SharedModule
     ],
     exports:[
-        DashboardComponent
+        DashboardComponent,
+        FooterComponent
     ]
 })
 

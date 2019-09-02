@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SharedModule } from './shared';
-import { ComponentsModule } from './shared/component/components.module';
+import { ComponentsModule } from './shared/components/components.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ComponentsModule } from './shared/component/components.module';
   imports: [
     BrowserModule,
     SharedModule,
-    ComponentsModule
+    ComponentsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
