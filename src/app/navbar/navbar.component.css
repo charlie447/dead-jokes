@@ -6,3 +6,18 @@
     color: white;
     padding: .5rem;
 }
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1024;
+}
+
+#mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: padding-top .3s,padding-bottom .3s;
+    background-color: transparent;
+}
