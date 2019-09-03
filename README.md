@@ -40,3 +40,7 @@ Angular 8.*
 ```
 ng g c shared/components/footer --style scss
 ```
+
+### Reference Template
+
+- https://startbootstrap.com/previews/agency/
