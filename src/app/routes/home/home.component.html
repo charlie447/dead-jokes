@@ -1,10 +1,87 @@
 <div class="" id="masthead">
-    <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Welcome To My Studio!</div>
-          <div class="intro-heading text-uppercase">
-            How are you today
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in">Welcome To My Studio!</div>
+      <div class="intro-heading text-uppercase">
+        How are you today
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Feature section: demonstrate all of my features -->
+<section class="page-section section-full-height">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-heading text-uppercase">Section Title</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <fa-stack size='6x'>
+          <fa-icon [icon]="faCircle" stackItemSize="2x"></fa-icon>
+          <fa-icon [icon]="faLaptop" [inverse]="true" stackItemSize="1x"></fa-icon>
+        </fa-stack>
+        <h4>Heading</h4>
+        <p class="text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <fa-stack size='6x'>
+          <fa-icon [icon]="faCircle" stackItemSize="2x"></fa-icon>
+          <fa-icon [icon]="faLaptop" [inverse]="true" stackItemSize="1x"></fa-icon>
+        </fa-stack>
+        <h4>Heading</h4>
+        <p class="text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <fa-stack size='6x'>
+          <fa-icon [icon]="faCircle" stackItemSize="2x"></fa-icon>
+          <fa-icon [icon]="faLaptop" [inverse]="true" stackItemSize="1x"></fa-icon>
+        </fa-stack>
+        <h4>Heading</h4>
+        <p class="text-muted">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Feature section -->
+<!-- Bad Jokes section -->
+<section class="page-section section-full-height">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="section-heading text-uppercase">Section Title</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
           </div>
         </div>
+  </div>
+</section>
+<!-- Bad Jokes section -->
+
+<!-- My gallery -->
+<section class="page-section section-full-height" id="myGallery">
+  <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-heading text-uppercase">Section Title</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+        </div>
       </div>
-</div>
+
+      <div class="row">
+        <div class="col-md-4 col-12 gallery-item my-3" *ngFor="let item of galleryItems">
+          <div class="gallery-item-hover"></div>
+          <img src={{item}} alt="" class="image-fluid">
+        </div>
+      </div>
+
+  </div>
+</section>
