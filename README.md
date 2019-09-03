@@ -31,6 +31,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ### Generate components with `scss`
 For instance:
+Angular 6.*
 ```
 ng g c shared/components/footer --styleext scss
+```
+
+Angular 8.*
+```
+ng g c shared/components/footer --style scss
 ```
