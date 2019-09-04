@@ -22,3 +22,9 @@
     transition: padding-top .3s,padding-bottom .3s;
     background-color: transparent;
 }
+
+#mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: black;
+}
