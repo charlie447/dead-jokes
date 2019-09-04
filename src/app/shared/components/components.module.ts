@@ -4,6 +4,7 @@ import { SharedModule } from '../index';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
 import { JokeCardComponent } from './joke-card/joke-card.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { JokeCardComponent } from './joke-card/joke-card.component';
         DashboardComponent,
         FooterComponent,
         JokeCardComponent,
+        NavbarComponent,
 
     ],
     imports: [
@@ -18,7 +20,9 @@ import { JokeCardComponent } from './joke-card/joke-card.component';
     ],
     exports:[
         DashboardComponent,
-        FooterComponent
+        FooterComponent,
+        JokeCardComponent,
+        NavbarComponent,
     ]
 })
 
