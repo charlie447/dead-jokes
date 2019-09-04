@@ -1,61 +1,87 @@
 #masthead {
-    color: white;
-    text-align: center;
-    height: 100vh;
-    background-image: url(../../../assets/images/fmn09281_compressed.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  background-image: url(../../../assets/images/fmn09281_compressed.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 
 }
 
 .intro-text {
-    padding-top: 12rem;
+  padding-top: 12rem;
 
-    .intro-lead-in {
-        font-size: 2rem;
-        font-style: italic;
-        font-family: cursive;
-        margin-bottom: 2rem;
-    }
-    .intro-heading {
-        font-size: 5rem;
-        font-weight: 700;
-        font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-        margin-bottom: 2rem;
-    }
+  .intro-lead-in {
+    font-size: 2rem;
+    font-style: italic;
+    font-family: cursive;
+    margin-bottom: 2rem;
+  }
+
+  .intro-heading {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    margin-bottom: 2rem;
+  }
 }
 
 .section-full-height {
-    height: 100vh;
+  height: 100vh;
 }
 
 .page-section {
-    padding: 5rem 0;
+  padding: 5rem 0;
 }
 
 .section-subheading {
-    font-style: italic;
-    margin-bottom: 2rem;
+  font-style: italic;
+  margin-bottom: 2rem;
 }
 
 .image-fluid {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .gallery-item {
+  .gallery-item-link {
+    display: block;
+    position: relative;
     .gallery-item-hover {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transition: all ease .5s;
-        opacity: 0;
-        background: rgba(254,209,54,.9);
-        
-    }
-    .gallery-item-hover:hover {
-        opacity: 1;
-    }
-}
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: all ease .5s;
+      opacity: 0;
+      background: rgba(254, 209, 54, .9);
 
+      .gallery-item-hover-content {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 20px;
+        margin-top: -12px;
+        text-align: center;
+        color: #fff;
+      }
+
+    }
+
+    .gallery-item-hover:hover {
+      opacity: 1;
+
+    }
+  }
+  .gallery-item-caption {
+    text-align: center;
+    h4 {
+        font-weight: 500;
+    }
+    p {
+        font-style: italic;
+    }
+  }
+}

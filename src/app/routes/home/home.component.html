@@ -67,7 +67,7 @@
 <!-- Bad Jokes section -->
 
 <!-- My gallery -->
-<section class="page-section section-full-height" id="myGallery">
+<section class="page-section " id="myGallery">
   <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -78,8 +78,18 @@
 
       <div class="row">
         <div class="col-md-4 col-12 gallery-item my-3" *ngFor="let item of galleryItems">
-          <div class="gallery-item-hover"></div>
-          <img src={{item}} alt="" class="image-fluid">
+          <a href="#" class="gallery-item-link">
+            <div class="gallery-item-hover">
+              <div class="gallery-item-hover-content">
+                <fa-icon [icon]="faRainbow" size="3x"></fa-icon>
+              </div>
+            </div>
+            <img src={{item}} alt="" class="image-fluid">
+          </a>
+          <div class="gallery-item-caption">
+            <h4>Lorem ipsum dolor</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          </div>
         </div>
       </div>
 
