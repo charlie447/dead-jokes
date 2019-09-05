@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,15 +9,15 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class NavbarComponent implements OnInit {
   pagePosition = 0;
   navShrink = false;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.pagePosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (this.pagePosition > 50) {
-      // console.log(this.pagePosition);
+    if (this.pagePosition > 50 || this.router.url != '/') {
+
       this.navShrink = true;
     } else {
       this.navShrink = false;

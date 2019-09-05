@@ -1,30 +1,37 @@
 .brand-title {
-    font-family: "Gill Sans", sans-serif;
-    font-weight: 700;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 700;
 }
 
-.nav-right .nav-item {
+.nav-right {
+  .nav-item {
     color: white;
     padding: .5rem;
+
+    .login-btn {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
 }
 
 .fixed-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1024;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1024;
 }
 
 #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    transition: padding-top .3s,padding-bottom .3s;
-    background-color: transparent;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  transition: padding-top .3s, padding-bottom .3s;
+  background-color: transparent;
 }
 
 #mainNav.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: black;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: black;
 }
