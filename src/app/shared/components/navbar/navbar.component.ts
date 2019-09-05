@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +9,18 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
   pagePosition = 0;
   navShrink = false;
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    router.events.subscribe((val) => {
+      if (val instanceof NavigationEnd) {
+        if (val.url != '/') {
+          this.navShrink = true;
+        } else {
+          this.navShrink = false;
+        }
+        
+      }
+    })
+   }
 
   ngOnInit() {
   }
@@ -17,7 +28,7 @@ export class NavbarComponent implements OnInit {
   onWindowScroll() {
     this.pagePosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if (this.pagePosition > 50 || this.router.url != '/') {
-
+      
       this.navShrink = true;
     } else {
       this.navShrink = false;
