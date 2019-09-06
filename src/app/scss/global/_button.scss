@@ -1,10 +1,14 @@
 .btn {
-    &.btn-primary {
-        background-color: #fed136;
-        border-color: #fed136;
+    &.btn-primary,
+    &.btn-default {
+        background-color: $primaryButtonColor;
+        border: none;
         &:hover {
-            background-color: #fec810;
-            border-color: #fec810
+            background-color: $primaryButtonHoverColor;
+
+        }
+        &:not(:disabled):not(.disabled):active {
+            background-color: $primaryButtonColor;
         }
     }
 }
