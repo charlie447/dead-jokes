@@ -1,22 +1,25 @@
-<section class="section-full-height page-section">
-  <div class="container">
+<section class="section-full-height page-section" id="loginSection">
+  <div class="container ">
     <div class="sign-in row">
-      <div class="col-md-6 offset-md-3 col-12">
-        <h3>Login to Dead Jokes</h3>
+      <div class="login-wrapper">
+        <div class="login-header">
+          <h3>Login to Bad Jokes Administrator Control</h3>
+        </div>
+        
 
-        <div class="form-section">
-          <form>
-            <div class="form-group">
-              <label for="uid">ID:</label>
-              <input type="text" id="uid" class="form-control">
+        <div class="form-section login-form-wrapper">
+          <form class="login-form">
+            <div class="input-wrapper">
+              <input type="text" id="uid" class="login-input" placeholder="User Name">
+              <fa-icon [icon]="faGrinTears" size="2x" class="focus-input"></fa-icon>
             </div>
-            <div class="form-group">
-              <label for="pwd">Passcode</label>
-              <input type="password" name="" id="pwd" class="form-control">
+            <div class="input-wrapper">
+              <input type="password" name="" id="pwd" class="login-input" placeholder="Password">
+              <fa-icon [icon]="faDizzy" size="2x" class="focus-input"></fa-icon>
             </div>
 
-            <div class="form-group">
-              <button class="btn btn-primary">Submit</button>
+            <div class="login-button-wrapper">
+              <button class="btn btn-primary btn-login">Submit</button>
             </div>
 
           </form>

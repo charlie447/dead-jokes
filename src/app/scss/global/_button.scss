@@ -11,4 +11,9 @@
             background-color: $primaryButtonColor;
         }
     }
+
+    &.btn-primary-gradient {
+        color: white;
+        background: $gradientOrange;
+    }
 }
