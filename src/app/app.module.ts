@@ -9,6 +9,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { SharedModule } from './shared';
 import { ComponentsModule } from './shared/components/components.module';
 import { AppRoutingModule } from './app-routing.module';
+import { ServicesModule } from "./services";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
     ComponentsModule,
     AppRoutingModule,
     FontAwesomeModule,
+    ServicesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
